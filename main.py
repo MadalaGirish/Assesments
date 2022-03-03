@@ -1,22 +1,16 @@
+# This is a sample Python script.
 
-#main page of weathershopper application
-def get_temperature(self,driver):
-    #returns the temperature on the landing page
-    temp = driver.find_element_by_xpath("//span[contains(@id,'temperature')]")
-    # Slice only the temperature value
-    temp = int(temp.text[:-2])
-    return temp
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-def get_product(self,temp):
-    #temperature value"""
-    product = ""
-    if temp < 19:
-        product = "moisturizer"
-    elif temp > 34:
-        product = "sunscreen"
-    return product
 
-def click_on_buy(self,driver, product):
-    #go to product page based on the temperature value"""
-    print(f"The weather seems cold, redirecting to {product} page")
-    driver.find_element_by_xpath(f"//button[contains(.,'Buy {product}s')]").click()
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
